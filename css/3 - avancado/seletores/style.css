@@ -1,0 +1,19 @@
+p.verde{
+    color: green;
+}
+li>a{
+    text-decoration: none;
+    color: yellow;
+    background-color: yellowgreen;
+}
+li a{
+    color: yellow !important;
+}
+/*irmao adjacente*/
+h1+p{
+
+}
+/*todos elementos selecionados dps do h1*/
+h1~p{
+
+}

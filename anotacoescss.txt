@@ -1,0 +1,21 @@
+SITES
+
+HTML entities - Tipos de formas dos elementos do css
+
+CLASSE E ID
+
+classes - da para usar mais de 1 vez
+id - somente 1 unico uso
+. -> define que e uma classe no css
+# -> define que e um id no css
+
+DIV E SPAN
+
+div- divisoes tipo block
+span - divisoes tipo inline, formatacoes especificas para texto
+
+----------
+
+display - inline, block, inline-block
+posicionamentos(static, absolute, fixed, relative)
+z-index - colocar para aparecer

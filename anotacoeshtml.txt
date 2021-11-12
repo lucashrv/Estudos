@@ -1,0 +1,37 @@
+SITES OU PROGRAMAS
+
+GIMP - editor de imagem gratuito
+HTML entities - codigos de caracteres especiais
+
+TABELAS
+
+tabela - table
+linhas - tr
+item principal - th
+iitem - td
+
+LISTAS
+
+lista ordenada ol /li - 1 Aa Ii 
+lista nao ordenada ul / li - circle,disc,square, none
+colspan - juncao de linhas
+rowspan - juncao de colunas
+
+FORMATACAO DE TEXTO
+
+negrito - strong
+italico - em
+underline - u
+errado - strike
+
+FORMATACAO IMAGEM
+
+alt - marcacao de texto para se a imagem crashar
+width - largura
+height - altura
+
+FORMULARIO
+
+form - formulario
+input - pegar dados do usuario
+input type text/password/button/submit 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+
+        <script>
+            
+            var nota1 = 7
+            var nota2 = 7
+            var nota3 = 7
+            var nota4 = 7
+            var faltas = 20
+            var media = (nota1 + nota2 + nota3 + nota4) / 4
+
+            if (media >= 7 && faltas <= 20) {
+                console.log('Voce passou')
+            } else {
+                console.log('Voce nao passou')
+            }
+
+            console.log('A media e: ' + media)
+
+            //Com operadores logicos
+
+            //(&& E)  (|| OU)  (! NEGACAO) (!= DIFERENTE)
+
+            if (10 > 9 && 8 < 10 && 1 > 0) {
+                console.log('True')
+            } else {
+                console.log('False')
+            }
+
+            if (10 > 9 || 12 < 10 || 1 > 9) {
+                console.log('True')
+            } else {
+                console.log('False')
+            }
+
+            //Operador ternario
+
+            var resultado1 =  1 != 2 || 2 > 3 || 3 < 2 ? 'Verdadeiro' : 'Falso'
+
+            var resultado2 = media >= 7 && faltas <= 20 ? 'Verdadeiro1' : undefined
+            console.log(resultado1)
+
+        </script>
+    </head>
+
+    <body>
+
+        <h1>operadores condicionais</h1>
+        <p>Igual ==</p>
+        <p>Identico === (igual e do mesmo tipo)</p>
+        <p>Nao identico !== (diferentes e de tipos diferentes)</p>
+        <p>diferente !=</p>
+
+    </body>
+</html>

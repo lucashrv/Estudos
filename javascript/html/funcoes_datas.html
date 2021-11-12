@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datas</title>
+
+    <script>
+
+        var data = new Date()//cria uma varivel de data
+
+        console.log(data.getDate()) //retorna o dia
+
+        console.log(data.getMonth() + 1)//retorna o mes de 0 a 11
+
+        console.log(data.getFullYear())//retorna o ano
+
+
+        //adicionar / remover dias da data
+
+        console.log(data.toString())//representacao da data em formato str
+
+        data.setDate(data.getDate() + 10)
+        data.setMonth(data.getMonth() + 1)
+        data.setFullYear(data.getFullYear() + 4)
+        //muda a data adicionando ou removendo dias, meses e anos
+
+        console.log(data.toString())
+
+        //data predefinida
+
+        // 25/08/2014
+        var data1 = new Date(2014, 07, 25)
+
+        //14/08/2014
+        var data2 = new Date(2014, 07, 14)
+
+        console.log(data1.getTime())
+        console.log(data2.getTime())
+        //recupera a data em milisegundos a partir do dia 1 de janeiro de 1970
+
+        console.log(Math.abs(data1.getTime() - data2.getTime()))//retorna a diferenca de milisegundos entra datas
+
+        var mili_entre_datas = Math.abs(data1.getTime() - data2.getTime()) 
+        var mili_por_dia = 1*24*60*60*1000
+        
+        console.log(Math.ceil(mili_entre_datas / mili_por_dia))//calculo dias entre datas
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

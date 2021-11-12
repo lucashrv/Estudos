@@ -1,0 +1,68 @@
+#menu{
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+
+#menu li{
+    list-style-type: none;
+    background: url(imagens/aba-direita.png) no-repeat right top;
+    float: left;
+}
+
+#menu a{
+    background: url(imagens/aba-esquerda.png) no-repeat left top;
+    display: block;
+    line-height: 40px;
+    padding: 0 2em;
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu a:hover{
+    color: red;
+}
+
+#menu .home{
+    background: url(imagens/aba-direita-atual.png) no-repeat right top;
+}
+
+#menu .home a{
+    background: url(imagens/aba-esquerda-atual.png) no-repeat left top;
+}
+
+.clear{
+    clear: both;
+}
+
+#menu1{
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu1 li{
+    list-style-type: none;
+    float: left;
+    
+}
+
+#menu1 a{
+    background: rgb(255, 123, 0);
+    color: white;
+    display: block;
+    line-height: 40px;
+    padding: 0 2em;
+    text-decoration: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid orangered;
+}
+
+#menu1 a:hover{
+    color: red;
+}
+
+#menu1 .home1 a{
+    background: orange;
+    color: #fff;
+}

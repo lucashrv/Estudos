@@ -1,0 +1,57 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(221, 55, 221) url(imagens/fundo.jpg) no-repeat top center;
+}
+
+#principal {
+    background: rgba(255, 255, 255, 0.3);
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 0px auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#principal img{
+    width: 100px;
+    margin-top: -50px;
+}
+
+#principal form{
+    margin-top: 30px;
+}
+
+#principal input{
+    width: 80%;
+    height: 30px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    padding-left: 30px;
+    
+}
+
+#principal .email{
+    background: #fff url(imagens/icone-usuario.png) no-repeat left center;
+    background-position: 5px;
+}
+
+#principal .senha{
+    background: #fff url(imagens/icone-cadeado.png) no-repeat left center;
+    background-position: 5px;
+}
+
+#principal .logar{
+    cursor: pointer;
+    background-color: orange;
+    background: linear-gradient(to bottom, #faa600, #f68a00);
+    padding: 5px 10px;
+}
+
+#principal .logar:hover{
+    background-color: orangered;
+    background: linear-gradient(to bottom, #fa8e00, #f65a00);
+}

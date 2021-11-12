@@ -1,0 +1,35 @@
+.box{
+    border: 5px solid pink;
+}
+.box1{
+    background: red;
+    border: 2px solid black;
+    width: 200px;
+    height: 300px;
+    /*padding-top: 40px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;*/
+    float: left;
+    margin: 10px;
+    
+}
+.box2{
+    background: blue;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 10px;
+    float: left;
+}
+.box3{
+    background: blue;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 10px;
+    float: left;
+}
+.clear{
+    clear: both;
+}

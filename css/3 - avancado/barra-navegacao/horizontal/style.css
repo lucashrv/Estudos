@@ -1,0 +1,35 @@
+#menu{
+    background: #159cb0 url(imagens/fundo-horizontal.png) repeat-x ;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 720px;
+    height: px;
+    float: left;
+}
+
+#menu li{
+    float: left;
+}
+
+#menu a{
+    background: url(imagens/divisor.png) repeat-y;
+    text-decoration: none;
+    display: block;
+    width: 144px;
+    height: 40px;
+    line-height: 2.2em;
+    text-align: center;
+    color: #fff;
+}
+
+#menu .home a{
+    background: none;
+}
+#menu a:hover{
+    background: rgb(3, 191, 204) url(imagens/divisor.png) repeat-y;
+}
+
+#menu .home a{
+    background: rgb(3, 191, 204);
+}

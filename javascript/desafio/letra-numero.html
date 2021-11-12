@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letra / Numero</title>
+
+    <script>
+
+        /*
+        
+        Desafio consiste em criar com o DOM uma forma de pegar um input e atribuir o seu valor a um campo 'Letras' se o caractere for uma letra ou atribuir o valor a um campo 'Numeros' se o caractere for numerico. 
+
+        */
+
+        function verificarCaracter(){
+
+            var caracter = document.getElementById('entrada').value
+
+            document.getElementById('entrada').value = ''
+
+            caracter.trim()
+
+            switch(caracter){
+                //Capturar numeros
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                case '10':
+                    document.getElementById('verificar_numero').value += caracter
+                    break
+                //Capturar letras
+                default:
+                    document.getElementById('verificar_letra').value += caracter
+
+
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    <br><br><br>
+    <hr>
+
+    <h2>Desafio Letra/Numero</h2>
+    
+    <input id="entrada" type="text" placeholder="Digite um caractere aqui!" onkeyup="verificarCaracter()">
+
+    <span>Letras:</span>
+    <input id="verificar_letra" type="text" disabled="disabled">
+
+    <span>Numeros:</span>
+    <input id="verificar_numero" type="text" disabled="disabled">
+
+    <hr>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+
+    <script>
+
+        /*
+
+        Eventos Mouse
+
+        onclick - Elemento clicado
+        ondblclick - Elemento clicado 2x
+        onmouseup - Clique liberado
+        onmouseover - Cursor em cima
+        onmouseout - Cursor sai de cima
+
+        Eventos Teclado
+
+        onkeydown - Tecla exibida apos o evento
+        onkeypress - Tecla exibida apos o evento e so contem caracteres
+        onkeyup - Tecla exibida antes do evento
+
+        Eventos Janela(Frame)
+
+        onresize - Ativado quando a janela e redimensionada
+        onscroll - Ativado quando o scroll do mouse e ativado
+
+        Eventos Formularios
+
+        onfocus - Ativado ao selecionar o elemento
+        onblur - Ativado ao elemento perder o foco
+        onchange - Ativado ao
+
+        */
+
+    </script>
+
+    <style>
+        .tamanho{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mouse</h1>
+
+    <div onclick="alert('Clicou onclick')"
+    style="background-color: antiquewhite;" class="tamanho">
+
+    </div>
+
+    <div ondblclick="alert('Clicou ondblclick')"
+    style="background-color: red;" class="tamanho">
+
+    </div>
+
+    <div onmouseup="alert('Clicou onmouseup')"
+    style="background-color: black;" class="tamanho">
+
+    </div>
+
+    <div onmouseover="alert('Passou onmouseover')"
+    style="background-color: blue;" class="tamanho">
+
+    </div>
+
+    <div onmouseout="alert('Passou onmouseout')"
+    style="background-color: green;" class="tamanho">
+
+    </div>
+
+
+    <h1>Teclado</h1>
+
+    <div>
+        <input onkeydown="alert('onkeydown')" type="text">
+    </div>
+
+    <div>
+        <input onkeypress="alert('onkeypress')" type="text">
+    </div>
+
+    <div>
+        <input onkeyup="alert('onkeyup')" type="text">
+    </div>
+
+    <h1>Formulario</h1>
+
+    <input onfocus="console.log('onfocus')" type="text">
+    <input onblur="console.log('onblur')" type="text">
+
+    <select onchange="alert('onchange')">
+        <option>--Selecione--</option>
+        <option value="1">Op1</option>
+        <option value="2">Op2</option>
+    </select>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Multidimensional</title>
+
+    <script>
+
+        //arrays que apontam para arrays
+
+        var lista = ['frutas', 'clientes']
+
+        lista['frutas'] = ['Pera', 'Uva', 'Banana', 'Maracuja']
+
+        lista['clientes'] = ['Lucas', 'Carlos', 'Maria', 'Joao']
+
+        /*
+        lista['frutas'][0] = 'Pera'
+        lista['frutas'][1] = 'Uva'
+        lista['frutas'][2] = 'Banana'
+        lista['frutas'][3] = 'Maracuja'
+        */
+
+        console.log(lista)
+
+        //Criado um array normal ['frutas', 'clientes'] , onde cada valor se torna um novo array pegando varios valores.
+
+        /*
+        =======================
+        |frutas    |clientes  |
+        =======================
+        |Pera      |Lucas     |
+        -----------------------
+        |Uva       |Carlos    |
+        -----------------------
+        |Banana    |Maria     |
+        -----------------------
+        |Maracuja  |Joao      |
+        -----------------------
+        */
+
+
+
+        //adicionando e removendo elementos
+
+        lista['frutas'].push('Acerola')
+        lista['clientes'].unshift('Larissa')
+
+        lista['frutas'].pop()
+        lista['clientes'].shift()
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

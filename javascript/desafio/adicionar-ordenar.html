@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar / Ordenar</title>
+
+</head>
+<body>
+    
+    <input id="ad_ord" placeholder="Digite aqui!" type="text">
+
+
+    <button onclick="adicionar()">Adicionar</button>
+
+    <button onclick="ordenar()">Ordenar</button>
+
+
+
+
+    <script>
+
+        /*
+        
+        Crie uma aplicação web contendo um campo para entrada de texto (input text) e dois botões (buttons), sendo um botão com a descrição "Adicionar" e outro com a descrição "Ordenar"
+
+        Após criar os elementos de interação com o usuário acima, crie um Array de nome objetos contendo os seguintes valores:  
+
+        var objetos = Array('Cadeira', 'Impressora', 'Garfo') 
+ 
+        Os próximos passos são:
+
+        A) Ao clicar no botão "Adicionar" disparar função que irá: 
+            • Recuperar o valor contido no campo de texto. 
+            • Verificar se o valor está vazio ou preenchido. 
+                * Se vazio, exibir alert com a mensagem "Informe um valor válido". 
+                * Se preenchido: 
+                    ▪ Verificar se o valor informado já existe dentro do Array objetos. 
+                    ▪ Se existir, exibir alert com a mensagem "Objeto já foi adicionado". 
+                    ▪ Se não existir: 
+                        • Incluir o valor preenchido no campo dentro do Array. 
+                        • Efetuar um console.log do Array para debug (checar se está funcionado). 
+                        • Limpar o valor contido no campo de entrada de texto.
+                         
+        B) Ao clicar no botão "Ordenar" disparar função que irá: 
+            • Ordenar de forma alfabética os valores do Array de objetos. 
+            • Efetuar um console.log do Array para debug (checar se está funcionado).
+
+        */
+
+        var objetos = ['Cadeira', 'Impressora', 'Garfo']
+
+        function adicionar(){
+
+            var valor = document.getElementById('ad_ord').value
+
+            if(valor === ''){
+
+                alert('Informe um valor válido')
+            }else{
+
+                var pesquisa = objetos.indexOf(valor)
+
+                if(pesquisa !== -1){
+
+                    alert('Objeto já foi adicionado')
+                }
+
+                if(pesquisa === -1){
+
+                    objetos.push(valor)
+                    console.log(objetos)
+                }
+
+            }
+
+        }
+
+        function ordenar(){
+
+            objetos.sort()
+            console.log(objetos)
+        }
+        
+
+    </script>
+
+</body>
+</html>

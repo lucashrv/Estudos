@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio DOM</title>
+
+    <script>
+
+        /*
+        
+        Crie um campo <input type="text"> e aplique os seguintes controles com base nos eventos abaixo: 
+
+        • No evento de foco modifique o background do input para amarelo. 
+
+        • Quando o campo perder o foco, recupere o seu respectivo valor e: 
+
+            * Caso o conteúdo contido no campo tenha menos de 3 caracteres o mesmo deve ter seu background alterado para vermelho. 
+
+            * Caso o conteúdo contido no campo tenha 3 caracteres ou mais o background 
+            deve ser alterado para verde. 
+
+        */
+
+        function foco(){
+
+            document.getElementById('arquivo').style.backgroundColor = 'yellow'
+        }
+
+        function perdeFoco(){
+
+            var valorCampo = document.getElementById('arquivo').value
+
+            if(valorCampo.length < 3){
+
+                document.getElementById('arquivo').style.background = 'red'
+                
+            }else if(valorCampo.length >= 3){
+
+                document.getElementById('arquivo').style.background = 'green'
+            }
+        }
+        
+       
+
+    </script>
+
+</head>
+<body>
+
+    <input id="arquivo" onfocus="foco()" onblur="perdeFoco()" placeholder="Escreva aqui!" style="background: #FFF;" type="text"> 
+    
+</body>
+</html>

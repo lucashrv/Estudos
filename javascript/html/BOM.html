@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    
+    <!-- Location exemplo, ao clicar no botao se redireciona para o link inserido -->
+    <button onclick=" window.location.href='https://www.google.com' ">Google</button>
+
+    <button onclick=" window.location.href='https://www.youtube.com' ">Youtube</button>
+
+    <script>
+
+        /*
+        Screen
+
+        Window.screen - screen recupera informacoes da tela
+
+        Window.document
+
+
+        Location
+
+        Window.location - usado para links e afins
+
+
+        Timing
+
+        //permitem com funcao do tempo executar uma acao programatica
+
+        setTimeout(acao, tempo em milissegundos) - executa a acao uma vez apos o tempo informado
+        clearTimeout()
+
+        seInterval() - executa a acao apos o periodo informado
+        clearInterval
+        
+        */
+        //Screen - recuperar o tamanho maximo ta tela
+        var altura = window.screen.availHeight
+        var largura = window.screen.availWidth
+
+        document.write(largura + 'x' + altura)
+
+
+        //Location - redireciona atraves de links(html body)
+        //window.location.reload() - recarrega a pagina
+        
+        //Timing
+
+        setTimeout(function(){ document.write('teste1') }, 2000)
+
+
+        setInterval(function(){ document.write('teste2 <br/>') }, 2000)
+
+    </script>
+    
+</body>
+</html>

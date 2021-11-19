@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Erros</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+        
+        try - tente
+        catch - pegar
+        finally - finalmente
+        
+        throw - lancar
+
+
+
+        */
+
+        var lista = Array(1, 2)
+
+        lista[0]['nome'] = 'Lucas'
+        lista[0]['sobrenome'] = 'henrique'
+
+
+        try{
+
+            lista[2]['nome']
+        }
+        catch(e){
+
+            console.log('tratar erro')
+            throw new Error('Houve um erro e a aplicacao sera finalizada!')
+        }
+        finally{
+
+            console.log('erro')
+        }
+
+    </script>
+    
+</body>
+</html>

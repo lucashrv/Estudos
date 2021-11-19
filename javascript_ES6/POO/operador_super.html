@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Super</title>
+
+    <script>
+
+        /*
+        
+        se uma classe herdar outra o operador super precisa ser implementado no construtor antes do this, para conceder acesso ao construtor da classe pai
+
+
+        */
+
+        class Animal{
+
+            constructor(cor, tamanho, peso){
+
+                this.cor = cor
+                this.tamanho = tamanho
+                this.peso = peso
+            }
+
+            dormir(){
+                console.log('Dorme')
+            }
+        }
+
+        class Cachorro extends Animal{
+            //herda de Animal
+            constructor(orelhas, cor, tamanho, peso){
+                //sera a entrada do construtor da classe pai passada como parametro no caso 'cor'
+                super(cor, tamanho, peso)
+                this.orelhas = orelhas
+            }
+
+            correr(){
+                console.log('Corre')
+            }
+
+            rosnar(){
+                console.log('Rosnar')
+            }
+        }
+
+        let cachorro = new Cachorro('Pequenas', 'Preto', 40, 15)
+
+        console.log(cachorro)
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

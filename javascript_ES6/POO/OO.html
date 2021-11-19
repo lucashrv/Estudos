@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientacao a Objetos</title>
+
+    <script>
+
+        /*
+        
+        Paradigma(padrao)
+
+        No JS paradigma atende aos principios procedural orientado a objetos
+
+        4 pilares da OO - Abstracao, Polimorfismo, Heranca, Encapsulamento
+
+        Abstracao - compreende as coisas no mundo real e busca trazer para dentro da aplicacao; com suas caracteristicas e acoes.
+
+        Encapsulamento - encapsula um objeto de tal modo a deixar ele seguro
+
+        Heranca - herda objetos de outras classes podendo ser utilizados em outra classe
+
+        Polimorfismo - Reescrita de metodos e atributos herdados que nao neccessitam de seu uso
+
+        
+
+        class - representa do modelo de criacao de objetos, convencao usar Camel Case
+        */
+
+        class ContaBancaria{
+
+            //*atributos
+
+            //agencia
+            //numeroConta
+            //saldo
+            //limite
+
+            constructor(){
+
+                this.agencia = 1234
+                this.numeroConta = 55125142
+                this.saldo = 760.0
+                this.limite = 1500.00
+            }
+
+            depositar(valorDeposito){
+
+                if(this.saldo + valorDeposito <= 1500){
+                    this.saldo += valorDeposito
+                }else{
+                    alert('Limite excedido!')
+                }
+            }
+
+            sacar(valorSaque){
+
+                if(this.saldo < valorSaque){
+                    alert('O valor do saque excede o saldo da sua conta!')
+                }else{
+                    this.saldo -= valorSaque
+                }
+            }
+
+            consultarSaldo(){
+
+                return this.saldo
+            }
+        }
+
+        let cliente1 = new ContaBancaria()
+
+        
+        console.log(cliente1.consultarSaldo())
+
+        cliente1.depositar(700)
+
+        console.log(cliente1.consultarSaldo())
+
+        cliente1.sacar(1400)
+
+        console.log(cliente1.consultarSaldo())
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

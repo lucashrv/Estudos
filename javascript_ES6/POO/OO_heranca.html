@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heranca</title>
+
+    <script>
+
+        /*
+        
+        superclasse (ou classe pai), subclasse (ou classe filha)
+
+        subclasse - herda os atributos e metodos da superclasse
+
+        para herdar uma classe usa-se na subclasse a palavra reservada 'extends' e o nome da classe no qual deseja herdar
+
+        */
+
+        class Animal{
+
+            constructor(){
+
+                this.cor = ''
+                this.tamanho = null
+                this.peso = 1
+            }
+
+            dormir(){
+                console.log('Dorme')
+            }
+        }
+
+        class Cachorro extends Animal{
+
+            constructor(){
+                super()
+                this.orelhas = 'Grandes'
+            }
+
+            correr(){
+                console.log('Corre')
+            }
+
+            rosnar(){
+                console.log('Rosnar')
+            }
+        }
+
+        class Passaro extends Animal{
+
+            constructor(){
+                super()
+                this.bico = 'Curto'
+            }
+
+            voar(){
+                console.log('Voa')
+            }
+
+        }
+        
+        //como Passaro herda de Animal, o Papagaio herda tanto de Passaro quando de Animal
+        class Papagaio extends Passaro{
+
+            constructor(){
+                super()
+                this.sabeFalar = true
+            }
+        }
+
+        let cachorro = new Cachorro()
+        let passaro = new Passaro()
+        let papagaio = new Papagaio()
+
+        cachorro.dormir()
+        passaro.dormir()
+        papagaio.dormir()
+
+        console.log(papagaio)
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

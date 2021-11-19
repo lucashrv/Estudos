@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcoes Factory</title>
+
+    <script>
+        
+        /*
+        
+        cria objetos em tempo real
+
+        retorna objetos
+
+        */
+
+        let BicicletaFactory = function(cor, marcha, aro) {
+
+            return{
+            //se o nome da variavel for o mesmo da chave pode colocar somente a variavel
+            cor,
+            marcha,
+            aro,
+
+            pedalar(){console.log('pedalar')}
+            }
+        }
+
+        let bicicleta = BicicletaFactory('vermelha', 'unica', 12)
+
+        console.log(bicicleta)
+        bicicleta.pedalar()
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

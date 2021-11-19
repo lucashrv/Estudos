@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+
+    <script>
+
+        //funcao anonima
+        let quadrado1 = function(x = 1){
+
+            return x * x
+        }
+
+        //arrow function
+        let quadrado2 = (x) => {
+            return x * x
+        }
+
+        //se houver apenas 1 parametro nao precisa do parenteses, se for void precisa ()
+        let quadrado3 = x => {
+            return x * x
+        }
+
+        //return implicito
+        let quadrado4 = x => x * x
+
+        //arrow function com if ternario
+        let parOuImpar = x => x % 2 === 0 ? console.log('Par') : console.log('Impar')
+
+        parOuImpar(1342139)
+        
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

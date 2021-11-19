@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulamento</title>
+
+    <script>
+
+        /*
+        
+        this._atributo
+
+        get - pega o elemento
+
+        set - seta os elementos
+
+        */
+
+        class Tv{
+
+            constructor(){
+
+                this._relacaoCanais = Array(2, 3, 4, 5, 6, 7)
+                this._canalAtivo = 5
+                this._volume = 5
+            }
+            //retorna o atributo
+            get canalAtivo(){
+
+                return this._canalAtivo
+            }
+            //seta o atributo
+            set canalAtivo(canal){
+
+                if(this._relacaoCanais.indexOf(canal) !== -1){
+                    this._canalAtivo = canal
+                }
+            }
+        }
+
+        let tv1 = new Tv()
+
+        //(ERRADO) quando for chamar o atributo encapsulado
+
+        console.log(tv1._canalAtivo)
+
+        //(CERTO) chamar a funcao pegando o get do atributo da classe encapsulada
+
+        console.log(tv1.canalAtivo)
+
+        //set -> e passada a mesma funcao, mas se atribuir um valor o JS entende que sera set.
+        tv1.canalAtivo = 7
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

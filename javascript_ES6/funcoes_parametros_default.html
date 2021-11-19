@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parametros Default</title>
+
+    <script>
+
+        function contarHistoria(personagem = 'Farofa', nome_dono = 'Joao', comida = 'Banana'){
+            console.log(`Era uma vez uma cachorro chamado ${personagem}, com seu dono chamado ${nome_dono}, comendo ${comida}`)
+        }
+
+        contarHistoria()//parametros undefined se nao tivesse os parametros default
+
+        contarHistoria('Spyke', 'Marcio','Hot-Dog')//os valores dos parametros continuam normais se acrecentalos, so ficando os default se ficar undefined 
+
+        //se um parametro for undefined o default e chamado
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

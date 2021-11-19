@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Literal</title>
+
+    <script>
+
+        /*
+        objetos literais - sao criados porque nem sempre e preciso criar uma classe para criar objetos, podendo assim mais facilmenter se criar usando objetos literais
+
+        todo objeto literal e um objeto unico, se o objeto literal for atribuido como valor a uma variavel, ao modificar o valor da variavel tambem modificara o valor do objeto
+        */
+
+        class Produto{
+
+            constructor(descricao, preco){
+
+                this.descricao = descricao
+                this.preco = preco
+            }
+
+            verDescricao(){
+                console.log(`${this.descricao} por apenas R$${this.preco}`)
+            }
+        }
+        
+        let produto1 = new Produto('Notebook', 1800.00)
+
+        //Objeto literal
+
+        let produto2 = {
+            descricao : 'Geladeira',
+            preco : 1000.00,
+            verDescricao : function(descricao, preco){
+                console.log(`${this.descricao} por apenas R$${this.preco}`)
+            }
+        }
+
+        //melhorias de notacao ES6
+
+        let nome = 'Jorge'
+        let idade = 29
+        let sexo = 'Masculino'
+        let profissao = 'Programador'
+
+        //quando o valor for o mesmo que o atributo, pode-se omitir o valor
+        let objeto = {
+            nome,
+            idade,
+            sexo,
+            profissao,
+            exibeResumo(){
+                console.log(`${this.nome}, ${this.idade} anos, sexo: ${this.sexo}, profissao: ${this.profissao}`)
+            }
+        }
+        console.log(objeto)
+        objeto.exibeResumo()
+
+
+        //modificando valores
+
+        let pessoa = {
+            nome: 'Jose',
+            idade: 45
+        }
+
+        pessoa.nome = 'Lucas'
+        pessoa.idade = 21
+
+        console.log(pessoa.nome, pessoa.idade)
+
+
+        //criando novos conjuntos de pares nome e valor
+
+        let cliente = {
+            nome: 'Fernanda',
+            idade: 26
+        }
+
+        cliente.sexo = 'Feminino'
+
+        cliente.dizerOi = () => {
+            return 'Hello'
+        }
+
+        console.log(cliente.nome, cliente.idade, cliente.sexo, cliente.dizerOi())
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

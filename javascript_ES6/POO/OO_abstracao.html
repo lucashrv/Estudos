@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstracao</title>
+
+    <script>
+
+        /*
+        
+        abstrar um software de marcenaria(cadeira e sofa); 
+
+        */
+
+        class Cadeira{
+
+            constructor(qtdPerna, giratoria, cor){
+
+                this.qtdPernas = qtdPerna
+                this.giratoria = giratoria
+                this.cor = cor
+            }
+
+            girarCadeira(){
+
+                if(this.giratoria === true){
+                    console.log('Cadeira gira')
+                }else{
+                    console.log('Cadeira nao gira ')
+                }
+            }
+        }
+
+        let cadeiraRustica = new Cadeira(4, false, 'verniz')
+        let cadeiraModerna = new Cadeira(1, true, 'Preto')
+
+        cadeiraRustica.girarCadeira() 
+        cadeiraModerna.girarCadeira()
+
+        //criar um array com os objetos
+        let cadeiras = Array()
+
+        cadeiras.push(cadeiraRustica)
+        cadeiras.push(cadeiraModerna)
+
+        console.log(cadeiras[0]['cor'])
+
+
+
+
+        class Sofa{
+
+            constructor(qtdPernas, cor, tamanho, desmonta){
+
+                this.qtdPernas = qtdPernas
+                this.cor = cor
+                this.tamanho = tamanho
+                this.desmonta = desmonta
+            }
+
+            exibeInformacoes(){
+                console.log(`O sofa possui: ${this.qtdPernas} pernas, cor: ${this.cor}, tamanho :${this.tamanho}, desmonta: ${this.desmonta === true ? 'Sim': 'Nao'}`)
+            }
+        }
+
+
+        let sofa1 = new Sofa(4, 'Vermelho', 4, true)
+        let sofa2 = new Sofa(2, 'Verde', 2, false)
+
+        sofa1.exibeInformacoes()
+        sofa2.exibeInformacoes()
+        
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

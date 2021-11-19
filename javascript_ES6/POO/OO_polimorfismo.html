@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Super</title>
+
+    <script>
+
+        /*
+        
+        ao herdar uma classe pode ter atributos e metodos que nao precisam
+
+        */
+
+    class Animal{
+
+        constructor(cor, tamanho, peso){
+
+            this.cor = cor
+            this.tamanho = tamanho
+            this.peso = peso
+        }
+
+        dormir(){
+            console.log('Dorme')
+        }
+    }
+
+    class Cachorro extends Animal{
+        constructor(orelhas, cor, tamanho, peso){
+        
+            super(cor, tamanho, peso)
+            this.orelhas = orelhas
+        }
+
+        correr(){
+            console.log('Corre')
+        }
+
+        rosnar(){
+            console.log('Rosnar')
+        }
+    }
+
+    class Avestruz extends Cachorro{
+        constructor(orelhas, cor, tamanho, peso){
+        
+            super(cor, tamanho, peso)
+            this.orelhas = orelhas
+        }
+
+        enterrarCabeca(){
+            console.log('Enterra cabeca')
+        }
+
+        //o avestruz possui o metodo rosnar() que nao era para conter em sua classe, nesse caso usa-se o polimorfismo, mudando o metodo ou o deixando void 
+        rosnar(){
+            return undefined
+        }
+    }
+
+    let avestruz = new  Avestruz()
+    console.log(avestruz.rosnar())
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

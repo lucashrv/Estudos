@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcoes Construtoras</title>
+
+    <script>
+
+        /*
+        
+        sao chamadas como classes mas nao e uma classe
+
+        */
+
+        let Carro = function(cor, modelo, velocidadeAtual, velocidadeMaxima){
+
+            this.cor = cor
+            this.modelo = modelo
+            this.velocidadeAtual = velocidadeAtual
+            this.velocidadeMaxima = velocidadeMaxima
+
+            this.acelerar = function(velocidadeAtual){
+
+                let velocidade = this.getVelocidadeAtual() + 10
+
+                this.setVelocidadeAtual(velocidade)
+            }
+            this.getVelocidadeAtual = function(){
+
+                return this.velocidadeAtual
+            }
+
+            this.setVelocidadeAtual = function(velocidadeAtual){
+
+                this.velocidadeAtual = velocidadeAtual
+            }
+
+            
+
+            
+        }
+
+        let carro1 = new Carro('verde', 'Uno', 0, 150)
+
+
+
+        //encapsulamento funcoes construtoras - variaves dentro do escopo da funcao sem o 'this' servem para deixar o atributo somente dentro do escopo, impedindo assim que possam ter alteracoes fora da funcao
+
+
+        let Carro2 = function(cor, modelo){
+
+            this.cor = cor
+            this.modelo = modelo
+
+            var velocidadeAtual = 0
+            var velocidadeMaxima = 160
+        }
+
+        
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

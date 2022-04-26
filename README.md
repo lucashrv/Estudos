@@ -1,2 +1,2 @@
 # Estudos
-Estudos com foco em aprender tecnologias 'FullStack'!
+Estudos com foco 'FullStack'!

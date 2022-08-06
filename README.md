@@ -1,2 +1,2 @@
 # Estudos
-Estudos com foco 'FullStack'!
+Estudos de tecnologias web.

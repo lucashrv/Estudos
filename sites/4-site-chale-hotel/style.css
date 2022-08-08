@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(img/bg.png);
+}
+
+header{
+    background: white url(img/topo-imagem-principal.png) no-repeat;
+    height: 250px;
+}
+
+footer{
+    padding: 23px 0 20px 0;
+    margin-bottom: 15px;
+    text-align: center;
+    background: rgb(255, 255, 235) url(img/bg-rodape.png) repeat-x;
+}
+
+#container{
+    width: 95%;
+    margin: 15px auto 0 auto;
+    min-width: 938px;
+}
+
+#logo{
+    width: 151px;
+    margin: 20px 0 0 20px;
+    float: left;
+}
+
+#logo a{
+    display: block;
+    background: url(img/logo.png) no-repeat;
+    width: 151px;
+    height: 66px;
+    text-indent: -3000px;
+}
+
+#header-lateral{
+    background: url(img/topo-imagem-lateral.png) no-repeat;
+    height: 250px;
+    width: 500px;
+    float: right;
+}
+
+#nav-header{
+    position: relative;
+    top: 60px;
+    left: 90px;
+    float: left;
+}
+
+#nav-header a{
+    color: rgba(0, 0, 0, 0.347);
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+#nav-header a:hover{
+    background-color: rgb(181, 170, 100);
+    color: rgba(255, 255, 255, 0.619);
+}
+
+#header-lateral img{
+    float: right;
+    margin: 20px;
+}
+
+#conteudo{
+    background: url(img/bg-container.png) repeat-y top center;
+    float: left;
+}
+
+#principal{
+    width: 50%;
+    background: url(img/bg-area-principal.png) repeat-x;
+    float: left;
+}
+
+#principal h3{
+    margin: 30px 30px 10px 30px;
+    color: rgb(143, 138, 90);
+}
+
+#principal p{
+    margin: 0 30px;
+}
+
+#nav-conteudo{
+    width: 50%;
+    background: url(img/bg-area-lateral.png) repeat-x;
+    float: right;
+    padding-bottom: 20px;
+}
+
+#nav-conteudo ul{
+    margin: 30px 20px;
+}
+
+#nav-conteudo li{
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid rgb(252, 255, 187);
+    background: url(img/ornamento.png) no-repeat top right;
+}
+
+#nav-conteudo a{
+    display: block;
+    color: rgba(0, 0, 0, 0.564);
+    padding-bottom: 9px;
+    font-size: 14px;
+    margin-right: 45px;
+}
+
+#nav-conteudo li:hover{
+    background-color: rgb(232, 229, 159);
+}
+
+#nav-conteudo a img{
+    width: 150px;
+    padding: 5px;
+    float: left;
+}
+
+#nav-conteudo a h3{
+    margin: 0  0 10px 170px;
+}
+
+#nav-conteudo a p{
+    margin: 0 0 10px 170px;
+}
+
+.reservar{
+    float: right;
+    margin: 15px 20px 0 0;
+    padding: 3px 0;
+    color: rgba(0, 0, 0, 0.418);
+    border-top: 1px solid rgb(181, 170, 100);
+    border-bottom: 1px solid rgb(181, 170, 100);
+}
+
+.reservar p{
+    float: left;
+    line-height: 25px;
+    font-size: 12px;
+}
+
+.reservar button{
+    float: right;
+    color: white;
+    background-color: rgb(181, 170, 100);
+    font-size: 11px;
+    padding: 5px 7px;
+    margin-left: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.reservar button:hover{
+    background-color: rgb(136, 123, 40);
+}

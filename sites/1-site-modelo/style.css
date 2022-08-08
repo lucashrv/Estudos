@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(201, 205, 156) url(./assets/fundo.png);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header a{
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+section{
+    background-color: rgb(237, 236, 236);
+    margin: 10px;
+    padding: 10px;
+}
+
+section h3{
+    margin: 10px 0;
+    color: rgb(126, 130, 80);
+}
+
+section img{
+    border: 8px solid rgb(201, 205, 156);
+    margin: 20px 0;
+}
+
+footer{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#container{
+    background: rgb(201, 205, 156);
+    width: 900px;
+    margin: 0 auto;
+}
+
+#linka{
+    width: 590px;
+    margin: 0 auto;
+    padding: 8px 0;
+}

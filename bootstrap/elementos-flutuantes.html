@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Elementos Flutuantes</title>
+</head>
+<body class="bg-light">
+
+    <!-- fixed-(top / bottom) -->
+    <h1 class="fixed-bottom">FIXED</h1>
+
+    <!--
+        float-none
+        float-left
+        float-right
+        clearfix
+     -->
+     <div class="clearfix bg-warning">
+        <div class="float-right bg-success">Float Right</div>
+        <div class="float-left bg-danger">Float Left</div>
+    </div>
+
+    <!--
+        *float responsivo*
+        float-<tamanho>-<left / right>
+    -->
+    <p class="float-sm-right">texto >= 576px</p>
+    <p class="float-md-right">texto >= 768px</p>
+    <p class="float-lg-right">texto >= 992px</p>
+    <p class="float-xl-right">texto >= 1200px</p>
+    <br>
+
+    <!-- colar no topo ao rolar -->
+    <p class="bg-warning sticky-top">sticky-top</p>
+</body>
+</html>

@@ -1,2 +1,4 @@
 # Estudos
-Estudos de tecnologias web.
+Estudos de tecnologias.
+
+HTML, CSS, JavaScript, Python
